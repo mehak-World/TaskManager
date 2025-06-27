@@ -12,4 +12,5 @@ WORKDIR /app
 ENV NODE_ENV=Production
 COPY --from=build /app .
 EXPOSE 3001
+EXPOSE 5173
 CMD ["node", "server/index.js"]
