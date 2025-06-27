@@ -33,6 +33,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_PASSWORD }}/task-manager:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/task-manager:latest
 
      
