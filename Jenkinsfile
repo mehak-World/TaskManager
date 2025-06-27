@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:20'       // Node.js environment
-            args '-u root:root'   // Optional: run as root to install packages if needed
-        }
-    }
+    agent any
 
     environment {
         DOCKER_IMAGE = "${DOCKER_USERNAME}/task-manager:latest"
